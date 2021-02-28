@@ -1,0 +1,7 @@
+name: Scoreboard
+version: ${project.version}
+main: me.hahota.simon.scoreboard.Scoreboard
+api-version: 1.16
+prefix: HahotaScoreboard
+authors: [ Simon ]
+description: Scoreboard plugin as a frist test with IntellJ

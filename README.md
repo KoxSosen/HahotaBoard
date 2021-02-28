@@ -1,13 +1,13 @@
 <div align="center">
 <img src="https://cdn.discordapp.com/emojis/812406493529505843.png" alt="HahotaScoreboard">
 
-# HahotaScoreboard
+# HahotaBoard
 
 [![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard)
  
+</div>
 
-
-Lightweight Scoreboard plugin for Paper servers.
+Lightweight scoreboard plugin for Paper servers.
 
 This plugin only works on 1.16.5 paper servers.
 Softdepeds:

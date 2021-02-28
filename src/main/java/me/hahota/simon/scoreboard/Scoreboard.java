@@ -50,24 +50,10 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     public void createBoard(){
         manager = Bukkit.getScoreboardManager();
-        board = manager.getMainScoreboard();
-        Objective obj = board.registerNewObjective("ScoreboardAc", "dummy",
+        board = manager.getNewScoreboard();
+        obj = board.registerNewObjective("asdf", "dummy",
                 ChatColor.translateAlternateColorCodes('&', "   &2Hahota    "));
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
-        Score score = obj.getScore("");
-        score.setScore(1);
-        Score score2 = obj.getScore(ChatColor.GRAY + "Your rank: " + getChat().getPlayerPrefix(player)); // add luckperms api check for rank
-        score2.setScore(2);
-        Score score3 = obj.getScore(" ");
-        score3.setScore(3);
-        Score score4 = obj.getScore(ChatColor.GRAY + "Your balance:" + getEcon().getBalance(player)); // add vault api to check for da balance
-        score4.setScore(4);
-        Score score5 = obj.getScore("");
-        score5.setScore(5);
-
-
-        player.setScoreboard(board);
-
     }
 
     private boolean setupEconomy() {

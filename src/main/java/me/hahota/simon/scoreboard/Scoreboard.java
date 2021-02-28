@@ -32,15 +32,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
             return;
         }
         setupChat();
-
-
-        if(!Bukkit.getOnlinePlayers().
-
-    isEmpty())
-            for(
-    Player online :Bukkit.getOnlinePlayers())
-
-    createBoard(online);
+        createBoard();
 
 }
 
@@ -56,17 +48,17 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     }
 
-    public void createBoard(Player player) {
-        ScoreboardManager manager = Bukkit.getScoreboardManager();
-        org.bukkit.scoreboard.Scoreboard board = manager.getMainScoreboard();
-        Objective obj = board.registerNewObjective("Random Scoreboard", "dummy",
+    public void createBoard(){
+        manager = Bukkit.getScoreboardManager();
+        board = manager.getMainScoreboard();
+        Objective obj = board.registerNewObjective("ScoreboardAc", "dummy",
                 ChatColor.translateAlternateColorCodes('&', "   &2Hahota    "));
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         Score score = obj.getScore("");
         score.setScore(1);
         Score score2 = obj.getScore(ChatColor.GRAY + "Your rank: " + getChat().getPlayerPrefix(player)); // add luckperms api check for rank
         score2.setScore(2);
-        Score score3 = obj.getScore("");
+        Score score3 = obj.getScore(" ");
         score3.setScore(3);
         Score score4 = obj.getScore(ChatColor.GRAY + "Your balance:" + getEcon().getBalance(player)); // add vault api to check for da balance
         score4.setScore(4);

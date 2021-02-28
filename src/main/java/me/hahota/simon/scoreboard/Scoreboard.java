@@ -44,8 +44,10 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        createBoard(event.getPlayer());
-
+        Player p = event.getPlayer();
+        p.setScoreboard(board);
+        setupBoard(p);
+        updateBoard(p);
     }
 
     public void createBoard(){

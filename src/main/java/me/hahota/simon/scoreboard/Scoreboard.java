@@ -12,7 +12,6 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.jetbrains.annotations.NotNull;
-import org.slf4j.Logger;
 
 public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
@@ -25,12 +24,6 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
             for (Player online : Bukkit.getOnlinePlayers())
                 createBoard(online);
 
-    }
-
-    @Override
-    public @NotNull Logger getSLF4JLogger() {
-        Logger 1 = null;
-        return 1;
     }
 
     @Override
@@ -51,15 +44,15 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
                     ChatColor.translateAlternateColorCodes('&', "&2Hahota"));
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         Score score = obj.getScore(ChatColor.AQUA + "What");
-        ((Score) score).setScore(4);
+        score.setScore(4);
             Score score2 = obj.getScore(ChatColor.GREEN + "ever");
-            ((Score) score2).setScore(3);
+            score2.setScore(3);
             Score score3 = obj.getScore(ChatColor.RED + "this");
-            ((Score) score3).setScore(2);
+            score3.setScore(2);
             Score score4 = obj.getScore(ChatColor.AQUA + "is");
-            ((Score) score4).setScore(1);
+            score4.setScore(1);
             Score score5 = obj.getScore(ChatColor.BLACK + "lol");
-            ((Score) score5).setScore(0);
+            score5.setScore(0);
 
 
             player.setScoreboard(board);

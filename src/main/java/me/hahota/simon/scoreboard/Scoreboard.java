@@ -40,19 +40,19 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
         public void createBoard(Player player) {
             ScoreboardManager manager = Bukkit.getScoreboardManager();
             org.bukkit.scoreboard.Scoreboard board = manager.getMainScoreboard();
-            Objective obj = board.registerNewObjective("HahotaScoreboard", "dummy",
-                    ChatColor.translateAlternateColorCodes('&', "&2Hahota"));
+            Objective obj = board.registerNewObjective("eztneadd", "dummy",
+                    ChatColor.translateAlternateColorCodes('&', "   &2Hahota    "));
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
-        Score score = obj.getScore(ChatColor.AQUA + "What");
-        score.setScore(4);
-            Score score2 = obj.getScore(ChatColor.GREEN + "ever");
-            score2.setScore(3);
-            Score score3 = obj.getScore(ChatColor.RED + "this");
-            score3.setScore(2);
-            Score score4 = obj.getScore(ChatColor.AQUA + "is");
-            score4.setScore(1);
-            Score score5 = obj.getScore(ChatColor.BLACK + "lol");
-            score5.setScore(0);
+        Score score = obj.getScore("");
+        score.setScore(1);
+            Score score2 = obj.getScore(ChatColor.GRAY + "Your rank: ");
+            score2.setScore(2);
+            Score score3 = obj.getScore("");
+            score3.setScore(3);
+            Score score4 = obj.getScore(ChatColor.GRAY + "Your balance:");
+            score4.setScore(4);
+            Score score5 = obj.getScore("");
+            score5.setScore(5);
 
 
             player.setScoreboard(board);

@@ -1,3 +1,6 @@
+<div align="center">
+<img src="https://cdn.discordapp.com/emojis/812406493529505843.png" alt="HahotaScoreboard">
+
 # HahotaScoreboard
 
 [![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard)

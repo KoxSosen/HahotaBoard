@@ -1,5 +1,9 @@
 # HahotaScoreboard
 
+[![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard)
+ 
+
+
 Lightweight Scoreboard plugin for Paper servers.
 
 This plugin only works on 1.16.5 paper servers.

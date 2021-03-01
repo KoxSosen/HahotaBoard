@@ -4,7 +4,7 @@
 # HahotaBoard
 
 [![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotaboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotaboard)
-![Java CI](https://github.com/KoxSosen/HahotaBoard/actions/workflows/main.yml/badge.svg)
+[![Java CI](https://github.com/KoxSosen/HahotaBoard/actions/workflows/main.yml/badge.svg)](https://github.com/KoxSosen/HahotaBoard/actions)
  
 </div>
 

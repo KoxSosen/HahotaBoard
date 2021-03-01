@@ -12,6 +12,6 @@
 
     [Addons]
     # Enable and disable Vault.
-    Vault=true
+    Vault=true # int
     # Enable and disable Papi placeholders.
-    Papi=true
+    Papi=true #int

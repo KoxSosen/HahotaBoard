@@ -116,4 +116,5 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
     private String format(String message) {
         return ChatColor.translateAlternateColorCodes('&', message);
     }
+
 }

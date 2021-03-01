@@ -3,8 +3,14 @@ version: ${project.version}
 main: me.hahota.simon.scoreboard.Scoreboard
 api-version: 1.16
 prefix: HahotaScoreboard
-authors: [ Simon ]
+authors: [ Simon, BigLev ]
 softdepend:
   - Vault
   - Essentials
 description: Scoreboard plugin as a frist test with IntellJ
+commands:
+  hscore:
+permissions:
+  hscore.reload:
+  hscore.toggle:
+  hscore.hscore:

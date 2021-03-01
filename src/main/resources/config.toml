@@ -1,0 +1,17 @@
+# Configuration file for HahotaBoard
+
+    [Board]
+    # blalba
+    Title=""
+    #balbal
+    Score1=""
+    Score2=""
+    Score3=""
+    Score4=""
+    Score5=""
+
+    [Addons]
+    # Enable and disable Vault.
+    Vault=true
+    # Enable and disable Papi placeholders.
+    Papi=true

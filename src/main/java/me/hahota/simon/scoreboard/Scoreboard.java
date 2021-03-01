@@ -18,6 +18,10 @@ import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.ScoreboardManager;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
 public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     private static Economy econ = null; // vault economy

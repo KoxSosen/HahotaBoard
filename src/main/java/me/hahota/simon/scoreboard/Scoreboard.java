@@ -119,6 +119,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     private boolean setupChat() {
         RegisteredServiceProvider<Chat> rsp = getServer().getServicesManager().getRegistration(Chat.class);
+        assert rsp != null;
         chat = rsp.getProvider();
         return chat != null;
     }

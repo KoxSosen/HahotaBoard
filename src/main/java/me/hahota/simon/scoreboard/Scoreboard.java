@@ -45,6 +45,24 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
+    public Toml loadConfig() {
+        if(!getDataFolder().exists()) {
+            getDataFolder().mkdirs(); // Creating the directory as it may not exist
+        }
+        File file = new File(getDataFolder(), "config.toml"); // Assign a variable to the file
+        if(!file.exists()) {
+            try {
+                Files.copy(getResource("config.toml"), file.toPath());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return new Toml(
+                new Toml().read(getResource("config.toml")))
+                .read(file);
+    }
+
     @Override
     public void onDisable() {
         // Plugin shutdown logic

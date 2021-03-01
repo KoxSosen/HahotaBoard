@@ -17,3 +17,13 @@
     Papi=true
     # Placeholders like %player_healt%
     InPluginPlacholders=true
+
+    [Properties]
+    #Update rate. First value is delay, the second is timer. This updates it every 200 second every 5 ticks.
+    Delay="200"
+    Period="5"
+
+    # This changes if you can reload or nah. This reloads all scoreboards for all player Permission: hscore.reload Command: /hscore reload
+    EnableReload=true
+    # Enable toggable. This is per player. Permsision: hscore.toggle Command: /hscore toggle
+    EnableToggle=true

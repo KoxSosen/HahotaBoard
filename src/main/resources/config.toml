@@ -1,17 +1,19 @@
 # Configuration file for HahotaBoard
 
     [Board]
-    # blalba
-    Title=""
+    # Scoreboard title. Shown as a first entry.
+    Title="&aHahotaBoard"
     #balbal
-    Score1=""
-    Score2=""
-    Score3=""
-    Score4=""
-    Score5=""
+    Score1="&cThis is the first line."
+    Score2="&aThis isn't"
+    Score3="&kThis is the third"
+    Score4="&aThis is not a stuff"
+    Score5="" # leave emptry to remove the score
 
     [Addons]
-    # Enable and disable Vault.
-    Vault=true # int
+    # Enable and disable Vault. ( %vault_prefix%, %vault_money% )
+    Vault=true
     # Enable and disable Papi placeholders.
-    Papi=true #int
+    Papi=true
+    # Placeholders like %player_healt%
+    InPluginPlacholders=true

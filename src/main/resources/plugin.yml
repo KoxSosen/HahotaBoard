@@ -1,4 +1,4 @@
-name: Scoreboard
+name: HahotaBoard
 version: ${project.version}
 main: me.hahota.simon.scoreboard.Scoreboard
 api-version: 1.16

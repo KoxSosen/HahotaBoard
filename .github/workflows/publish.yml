@@ -23,8 +23,7 @@ jobs:
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
-          chmod +x gradlew
-          ./gradlew build
+          mvn clean package
       - uses: actions/upload-artifact@v2
         with:
           name: HahotaBoard-${{ matrix.java }}  

@@ -10,7 +10,7 @@ softdepend:
 description: Scoreboard plugin as a frist test with IntellJ
 commands:
   hscore:
-permissions:
-  hscore.reload:
-  hscore.toggle:
-  hscore.hscore:
+    description: Main hscore command
+    aliases:
+      - scoreh
+      - hboard

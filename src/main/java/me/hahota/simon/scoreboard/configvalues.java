@@ -6,8 +6,8 @@ public class configvalues {
 
     public class TomlConfig {
 
-        private String Title;
-        private String Score1;
+        public String Title;
+        public String Score1;
         private String Score2;
         private String Score3;
         private String Score4;

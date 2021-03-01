@@ -62,7 +62,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
         manager = Bukkit.getScoreboardManager();
         board = manager.getNewScoreboard();
         obj = board.registerNewObjective("asdf", "dummy",
-                ChatColor.translateAlternateColorCodes('&', "   &2Hahota    "));
+                ChatColor.translateAlternateColorCodes('&', "   &aHahota    ")); // config.getString(Title);
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
     }
 

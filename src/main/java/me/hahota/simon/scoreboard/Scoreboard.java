@@ -1,5 +1,6 @@
 package me.hahota.simon.scoreboard;
 
+import com.moandjiezana.toml.Toml;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 

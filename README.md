@@ -3,7 +3,8 @@
 
 # HahotaBoard
 
-[![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotascoreboard)
+[![CodeFactor](https://www.codefactor.io/repository/github/koxsosen/hahotaboard/badge)](https://www.codefactor.io/repository/github/koxsosen/hahotaboard)
+![Java CI](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
  
 </div>
 

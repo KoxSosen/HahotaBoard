@@ -1,10 +1,8 @@
 package me.hahota.simon.scoreboard;
 
-import net.milkbowl.vault.chat.Chat;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class commands {
 

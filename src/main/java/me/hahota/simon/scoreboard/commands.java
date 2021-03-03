@@ -3,6 +3,7 @@ package me.hahota.simon.scoreboard;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 public class commands {
 
@@ -22,7 +23,8 @@ public class commands {
     }
     public boolean onCommand1(CommandSender sender, Command cmd, String label, String[] args) {
         if (label.equalsIgnoreCase("hscore toggle")) {
-            if (sender instanceof Player) {
+            if (sender.hasPermission("hscore.toggle"))
+            if (sender instanceof Player    ) {
                 Player player = (Player) sender; // toggle scoreboard
             }
             else {

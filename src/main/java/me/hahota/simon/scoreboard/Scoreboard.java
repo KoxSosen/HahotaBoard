@@ -85,7 +85,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
     }
 
     public void applyToClass(Toml toml) {
-        toml.to(configvalues.TomlConfig.class);
+        toml.to(TomlConfig.class);
     }
 
     @Override

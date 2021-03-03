@@ -9,15 +9,10 @@ softdepend:
   - Essentials
   - PlaceholderAPI
 description: Scoreboard plugin as a frist test with IntellJ
+
 commands:
   hscore:
     description: Main hscore command
     aliases:
       - scoreh
       - hboard
-  hscore toggle:
-    description: Toggle the scoreboard
-    aliases:
-      - hscore toggla
-      - hscore toggle
-    permission: hsocre.toggle

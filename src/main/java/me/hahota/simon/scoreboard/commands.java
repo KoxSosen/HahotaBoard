@@ -20,6 +20,20 @@ public class commands {
         }
         return false;
     }
+    public boolean onCommand1(CommandSender sender, Command cmd, String label, String[] args) {
+        if (label.equalsIgnoreCase("hscore toggle")) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender; // toggle scoreboard
+            }
+            else {
+                sender.sendMessage("Hahota board ${project.version}");
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
 
 

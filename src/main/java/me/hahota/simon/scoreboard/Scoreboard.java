@@ -70,6 +70,23 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
                 new Toml().read(getResource("config.toml")))
                 .read(file);
     }
+    public class TomlConfig {
+
+        public String Title;
+        public String Score1;
+        private String Score2;
+        private String Score3;
+        private String Score4;
+        private String Score5;
+        private String Vault;
+        private String Papi;
+
+
+    }
+
+    public void applyToClass(Toml toml) {
+        toml.to(configvalues.TomlConfig.class);
+    }
 
     @Override
     public void onDisable() {

@@ -24,6 +24,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.Objects;
 
 public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
@@ -61,7 +62,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
         File file = new File(getDataFolder(), "config.toml"); // Assign a variable to the file
         if(!file.exists()) {
             try {
-                Files.copy(getResource("config.toml"), file.toPath());
+                Files.copy(Objects.requireNonNull(getResource("config.toml")), file.toPath());
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -105,7 +106,7 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
         manager = Bukkit.getScoreboardManager();
         board = manager.getNewScoreboard();
         obj = board.registerNewObjective("asdf", "dummy",
-                ChatColor.translateAlternateColorCodes('&', "   &aHahota    ")); // config.getString(Title);
+                ChatColor.translateAlternateColorCodes('&', getConfig().getString("Title"))); // config.getString(Title);
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
     }
 

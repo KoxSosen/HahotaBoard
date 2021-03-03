@@ -1,6 +1,7 @@
 package me.hahota.simon.scoreboard;
 
 import com.moandjiezana.toml.Toml;
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 
@@ -8,6 +9,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -33,8 +35,11 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
 
     @Override
     public void onEnable() {
+
+
         this.getServer().getPluginManager().registerEvents(this, this);
         // Plugin startup logic
+
         if (!setupEconomy()) {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
@@ -44,6 +49,9 @@ public final class Scoreboard extends JavaPlugin implements @NotNull Listener {
         createBoard();
 
     }
+
+
+
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public Toml loadConfig() {
